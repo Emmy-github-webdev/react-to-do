@@ -26,6 +26,10 @@ class TodoItem extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    console.log("Cleaning up...")
+  }
+
   render() {
     const { completed, id, title } = this.props.todo;
     let viewMode = {}
