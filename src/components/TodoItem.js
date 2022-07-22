@@ -12,6 +12,16 @@ class TodoItem extends React.Component {
       editing: true,
     })
   };
+
+  handleUpdatedDone = event => {
+    if (event.key === "Enter"){
+      this.setState({editing: false})
+    }
+  };
+
+  componentWillUnmount(){
+    console.log("Cleaning up... ");
+  }
   
   render() {
     const completedStyle = {
@@ -39,9 +49,9 @@ class TodoItem extends React.Component {
           type="checkbox" 
           className={styles.checkbox}
           checked={completed} 
-          onChange={() => props.handleChangeProps(id)}
+          onChange={() => this.props.handleChangeProps(id)}
           /> 
-          <button onClick={() => props.deleteTodoProps(id)}>
+          <button onClick={() => this.props.deleteTodoProps(id)}>
             Delete
           </button>
           <span style={this.props.todo.completed ? completedStyle : null }>
@@ -56,6 +66,7 @@ class TodoItem extends React.Component {
           onChange={e => {
             this.props.setUpdate(e.target.value, id);
           }}
+          onKeyDown={this.handleUpdatedDone}
         />
       </li>
     )
