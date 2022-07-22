@@ -21,6 +21,7 @@ class TodoItem extends React.Component {
 
   componentWillUnmount(){
     console.log("Cleaning up... ");
+    // Add the needed code...
   }
   
   render() {
