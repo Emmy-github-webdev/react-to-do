@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import React, { useState } from "react"
+import React, { useState, useEffect  } from "react"
 import styles from "./TodoItem.module.css"
 
 const TodoItem = (props) => {
@@ -15,6 +15,12 @@ const TodoItem = (props) => {
       setEditing(false)
     }
   };
+
+  useEffect(() => {
+    return () => {
+      console.log("Cleaning up...")
+    }
+  }, [])
 
   const completedStyle = {
     fontStyle: "italic",
