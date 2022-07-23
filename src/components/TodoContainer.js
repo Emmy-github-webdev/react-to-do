@@ -9,7 +9,7 @@ import { v4 as uuidv4 } from "uuid";
 const TodoContainer = () => {
   const [todos, setTodos] = useState([]);
   
-  const handleChange = d => {
+  const handleChange = id => {
     setTodos(prevState => 
       prevState.map(todo => {
         if (todo.id === id){
@@ -55,7 +55,20 @@ const TodoContainer = () => {
 
   useEffect(() => {
     console.log("Test run");
-  })
+    const temp = localStorage.getItem("todos");
+    const loadedTodos = JSON.parse(temp);
+
+    if(loadedTodos){
+      setTodos(loadedTodos)
+    }
+  }, []);
+
+  useEffect(()=> {
+    const temp = JSON.stringify(todos);
+    localStorage.setItem("todos", temp);
+
+  }, [todos]);
+
   return (
     <div className="container">
       <div className="inner">
