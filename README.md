@@ -1,52 +1,79 @@
-# React To Do
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-React To Do is a project that showcases my ReactJS experience and ability to the world!
+# Todo List 
 
+> Todo List is an app build to keep track of your daily activities using ReactJS
 
-If you like what you see and have a project you need coded, don't hesitate to contact me.
-
-
-# Built With
-
-
-- Major languages: JSX and CSS, ReactJS
-- Technologies used: Web services, Gitflow
+![screenshot](./todo1.png)
+![screenshot](./todo2.png)
 
 
-# Getting Started
+## Built With
 
+- React 
+- Class Component
+- Convert Class componets to function components
 
-To get a local copy up and running follow these simple example steps.
+## Live Demo
 
-## Prerequisites 
+[Live Demo Link](https://emmy-github-webdev.github.io/react-to-do/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
 - A working Laptop or Desktop
-## Setup
+- Internet
+- Knowledge of React, RReact component
+
+### Setup
 - Install code editor
 - Install Git bash
-- Install Node
-## Install
-- clone the [project](git@github.com:Emmy-github-webdev/react-to-do.git).
-## Usage
-- Test your Gitflow flow, a linter and professional documentation ability
-## Run tests
-- Run npm run build to rebuild the project
-- Run npm run start to run the project
-## Deployment
-- Push the project to your GitHub repo
-- Navigate to page in the prject settings and publish
-# Authors
+- Install react app
+### Install
 
-- GitHub: [Emmy-github-webdev](https://github.com/Emmy-github-webdev).
-- Twitter: [@ogaemmanuel](https://twitter.com/OgaemmanuelOga).
-- LinkedIn: [@ogaemmanuel](https://www.linkedin.com/in/emmanuel-oga-16171584/).
+- React:
+npx create-react-app the-app-name
 
-# Contributing
+
+### Clone Project
+[Todo List](https://github.com/Emmy-github-webdev/react-to-do)
+
+### Usage
+
+The Todo List is an activity tracker
+
+### Run tests
+- npm run start
+
+### Deployment
+- [GitHub Page](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+
+## Authors
+
+👤 **Emmanuel Ogah**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Emmy-github-webdev/react-to-do/issues).
 
-# Show your support
+## Show your support
 
-Give a :star: if you like this project!
+Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+- Inspiration
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
